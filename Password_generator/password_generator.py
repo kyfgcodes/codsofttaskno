@@ -5,7 +5,7 @@ char = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O
 
 
 len_ofword = int(input('How many characters do you want the password to be? \n'))
-v
+
 def gen():
   password = ''
   for _ in range(len_ofword):
