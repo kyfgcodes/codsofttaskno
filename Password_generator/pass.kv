@@ -1,0 +1,31 @@
+#:import utils kivy.utils
+
+<PassLayout>
+	BoxLayout:
+		orientation: 'horizontal'
+		size: root.width, root.height
+		foreground:
+		
+		TextInput:
+			id: pass_len
+			hint_text: 'How many characters do you want your password to be?'
+			foreground_color: (0, 0, 0, 1)
+			padding_x: (5, 20)
+			padding_y: (30, 0)
+			auto_indent: True
+			background_color:(1, 1, 1, 1)
+			multiline: True
+			halign: 'left'
+			font_size: 30
+			size_hint: ('.009dp', '0.08dp')
+			pos_hint: { "x":0.5, "y":0.5 }
+			
+	
+		Button:
+			id: B
+			text: 'GO!'	
+			background_color:('#2762c2')
+			size_hint: ('.002dp', '0.08dp')
+			pos_hint: {'top': .6,'right': 1, }
+			font_size: 32
+			on_press: root.gen()
